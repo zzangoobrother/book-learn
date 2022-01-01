@@ -206,3 +206,6 @@ public class MyTreeMap<K, V> implements Map<K, V> {
 }
 ````
 
+- get메소드와 containsKey 메소느는 findNode 메소드를 이용한다. node의 key 크기를 비교하여 left인지 right인지 구분하여 node를 저장한다.
+- putHelper메소드는 key의 크기를 비교하여 채울 공간으로 이동한다. key가 이미 트리에 있다면 기존 값을 새로운 값으로 대체한다.
+- keySet메소드는 오름차순으로 left의 값부터 set에 넣고 right를 다음에 넣는다.
